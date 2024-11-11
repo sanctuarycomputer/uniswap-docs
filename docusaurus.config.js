@@ -31,62 +31,7 @@ module.exports = {
       indexName: 'v3-docs',
       appId: 'S0IDD0YGLZ',
     },
-    navbar: {
-      title: 'Uniswap Docs',
-      logo: {
-        alt: 'Uniswap Unicorn',
-        src: 'img/uni_dark_icon.svg',
-      },
-      items: [
-        {
-          to: '/concepts/overview',
-          label: 'Concepts',
-          position: 'left',
-          className: 'V3_active',
-        },
-        {
-          to: '/contracts/v4/overview',
-          label: 'Contracts',
-          position: 'left',
-          className: 'V3_active',
-        },
-        {
-          to: '/sdk/v3/overview',
-          label: 'SDKs',
-          position: 'left',
-          className: 'V3_active',
-        },
-        {
-          to: '/api/subgraph/overview',
-          label: 'APIs',
-          position: 'left',
-          className: 'V3_active',
-        },
-        {
-          label: 'Give Feedback',
-          to: 'https://forms.gle/13XtjmkwdXQ2jMn26',
-          position: 'right',
-          className: 'persistent',
-        },
-        {
-          label: 'Whitepaper',
-          to: 'https://uniswap.org/whitepaper-v3.pdf',
-          position: 'right',
-          className: 'persistent',
-        },
-        {
-          href: 'https://github.com/uniswap/uniswap-docs',
-          label: 'GitHub',
-          position: 'right',
-          className: 'persistent',
-        },
-        {
-          href: 'https://unigrants.org/',
-          label: 'Grants',
-          position: 'right',
-          className: 'persistent',
-        },
-      ],
+    navbar: {/* using custom navigation */},
     },
     footer: {
       // style: "dark",
@@ -180,16 +125,11 @@ module.exports = {
           ],
         },
       ],
-      // copyright: `unlicensed`,
+      copyright: `unlicensed`,
     },
     colorMode: {
       // "light" | "dark"
       defaultMode: 'dark',
-
-      // Hides the switch in the navbar
-      // Useful if you want to support a single color mode
-      disableSwitch: false,
-
       // Should we use the prefers-color-scheme media-query,
       // using user system preferences, instead of the hardcoded defaultMode
       respectPrefersColorScheme: true,
