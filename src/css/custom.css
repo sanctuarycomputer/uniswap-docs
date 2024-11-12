@@ -22,3 +22,13 @@
 .default-grid {
   @apply grid grid-cols-4 gap-gap-large sm:grid-cols-8;
 }
+
+.breadcrumbs__link {
+  @apply !text-light-neutral-1 dark:!text-dark-neutral-1 !bg-transparent !p-0 !body-3;
+}
+.breadcrumbs__item:first-child, .breadcrumbs__item:first-child:after {
+  @apply !hidden;
+}
+.breadcrumbs__item:not(:last-child):after {
+  @apply !text-light-neutral-1 dark:!text-dark-neutral-1;
+}
