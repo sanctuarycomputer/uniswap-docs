@@ -79,6 +79,59 @@ export const MiniUnicon: FC<{
   )
 }
 
+export const Github: FC<{
+  className?: string
+  color?: 'neutral-2'
+}> = ({ className, color = 'neutral-2' }) => {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M21 12C21 15.99 18.4 19.36 14.81 20.55C14.38 20.62 14.23 20.35 14.23 20.12C14.23 19.82 14.24 18.85 14.24 17.65C14.24 16.81 13.95 16.26 13.63 15.98C15.63 15.76 17.74 15 17.74 11.54C17.74 10.56 17.39 9.76 16.81 9.13C16.91 8.9 17.22 7.97999 16.73 6.73999C16.73 6.73999 15.97 6.50001 14.25 7.67001C13.53 7.47001 12.76 7.36999 12 7.35999C11.23 7.36999 10.46 7.47001 9.75 7.67001C8.03 6.50001 7.27002 6.73999 7.27002 6.73999C6.78002 7.97999 7.08999 8.9 7.17999 9.13C6.60999 9.76 6.26001 10.56 6.26001 11.54C6.26001 14.99 8.35999 15.76 10.36 15.99C10.1 16.21 9.86998 16.61 9.78998 17.19C9.26998 17.42 7.96998 17.82 7.16998 16.44C7.16998 16.44 6.68998 15.58 5.78998 15.52C5.78998 15.52 4.90998 15.51 5.72998 16.06C5.72998 16.06 6.31998 16.34 6.72998 17.38C6.72998 17.38 7.25001 18.99 9.76001 18.44C9.76001 19.19 9.77002 19.9 9.77002 20.12C9.77002 20.34 9.61 20.62 9.19 20.55C5.6 19.37 3 15.99 3 12C3 7.03 7.03 3 12 3C16.97 3 21 7.03 21 12Z"
+        className={cn('transition-all', {
+          'fill-light-neutral-2 group-hover:fill-light-neutral-1 dark:fill-dark-neutral-2 group-hover:dark:fill-dark-neutral-1':
+            color === 'neutral-2',
+        })}
+      />
+    </svg>
+  )
+}
+
+export const X: FC<{
+  className?: string
+  color?: 'neutral-2'
+}> = ({ className, color = 'neutral-2' }) => {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17.1682 4H19.9268L13.9001 10.8881L20.99 20.2613H15.4386L11.0906 14.5765L6.1155 20.2613H3.35525L9.80139 12.8937L3 4H8.69229L12.6225 9.19611L17.1682 4ZM16.2 18.6102H17.7286L7.86171 5.56442H6.22141L16.2 18.6102Z"
+        className={cn('transition-all', {
+          'fill-light-neutral-2 group-hover:fill-light-neutral-1 dark:fill-dark-neutral-2 group-hover:dark:fill-dark-neutral-1':
+            color === 'neutral-2',
+        })}
+      />
+    </svg>
+  )
+}
+
+export const Discord: FC<{
+  className?: string
+  color?: 'neutral-2'
+}> = ({ className, color = 'neutral-2' }) => {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M18.95 6.26001C17.65 5.67001 16.26 5.24 14.82 5C14.64 5.31 14.44 5.73 14.3 6.06C12.76 5.84 11.24 5.84 9.72001 6.06C9.58001 5.73 9.37002 5.31 9.20002 5C7.75002 5.24 6.36001 5.67001 5.07001 6.26001C2.45001 10.08 1.74001 13.81 2.10001 17.49C3.84001 18.74 5.52002 19.5 7.17002 20C7.57002 19.46 7.94 18.88 8.25 18.27C7.65 18.05 7.08001 17.78 6.54001 17.46C6.68001 17.36 6.82002 17.25 6.95002 17.14C10.24 18.63 13.82 18.63 17.07 17.14C17.21 17.25 17.34 17.36 17.48 17.46C16.94 17.78 16.37 18.05 15.77 18.27C16.08 18.88 16.45 19.46 16.85 20C18.5 19.5 20.19 18.74 21.92 17.49C22.36 13.23 21.23 9.53001 18.97 6.26001H18.95ZM8.68 15.17C7.69 15.17 6.88001 14.27 6.88001 13.17C6.88001 12.07 7.67 11.17 8.68 11.17C9.69 11.17 10.5 12.07 10.48 13.17C10.48 14.27 9.68 15.17 8.68 15.17ZM15.32 15.17C14.33 15.17 13.52 14.27 13.52 13.17C13.52 12.07 14.31 11.17 15.32 11.17C16.33 11.17 17.14 12.07 17.12 13.17C17.12 14.27 16.33 15.17 15.32 15.17Z"
+        className={cn('transition-all', {
+          'fill-light-neutral-2 group-hover:fill-light-neutral-1 dark:fill-dark-neutral-2 group-hover:dark:fill-dark-neutral-1':
+            color === 'neutral-2',
+        })}
+      />
+    </svg>
+  )
+}
+
 export const Sun: FC<{
   className?: string
   color?: 'neutral-2'

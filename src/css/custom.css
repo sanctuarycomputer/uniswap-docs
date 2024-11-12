@@ -16,6 +16,14 @@
 @import './types.css';
 
 :root {
+  .site-max-width {
+    max-width: 1440px;
+  }
+
+  .default-grid {
+    @apply grid grid-cols-4 gap-gap-large sm:grid-cols-8;
+  }
+
   .Navbar {
     .Navbar__logo-text {
     }

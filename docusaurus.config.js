@@ -31,101 +31,11 @@ module.exports = {
       indexName: 'v3-docs',
       appId: 'S0IDD0YGLZ',
     },
-    navbar: {/* using custom navigation */},
+    navbar: {
+      /* using custom navigation */
     },
     footer: {
-      // style: "dark",
-      links: [
-        {
-          title: 'Developers',
-          items: [
-            {
-              label: 'Feedback',
-              href: 'https://forms.gle/13XtjmkwdXQ2jMn26',
-            },
-            {
-              label: 'Bug Bounty',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery/blob/main/bug-bounty.md',
-            },
-            {
-              label: '#dev-chat',
-              href: 'https://discord.com/invite/uniswap',
-            },
-            {
-              label: 'Whitepaper',
-              href: 'https://uniswap.org/whitepaper-v3.pdf',
-            },
-          ],
-        },
-        {
-          title: 'Github',
-          items: [
-            {
-              label: 'uniswap-v3-core',
-              href: 'https://github.com/Uniswap/uniswap-v3-core',
-            },
-            {
-              label: 'uniswap-v3-sdk',
-              href: 'https://github.com/Uniswap/uniswap-v3-sdk',
-            },
-            {
-              label: 'uniswap-v3-periphery',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery',
-            },
-            {
-              label: 'Deployment addresses',
-              href: 'https://github.com/Uniswap/uniswap-v3-periphery/blob/main/deploys.md',
-            },
-          ],
-        },
-        {
-          title: 'Ecosystem',
-          items: [
-            {
-              label: 'Home',
-              href: 'https://uniswap.org/',
-            },
-            {
-              label: 'App',
-              href: 'https://app.uniswap.org/',
-            },
-            {
-              label: 'Analytics',
-              href: 'https://info.uniswap.org/home',
-            },
-            {
-              label: 'Token Lists',
-              href: 'https://tokenlists.org/',
-            },
-            {
-              label: 'Brand Assets',
-              href: 'https://uniswap.org/Uniswap_brand_assets.zip',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Governance',
-              href: 'https://gov.uniswap.org/',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discord.com/invite/uniswap',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/Uniswap',
-            },
-            {
-              label: 'Blog',
-              href: 'https://uniswap.org/blog/',
-            },
-          ],
-        },
-      ],
-      copyright: `unlicensed`,
+      /* using custom footer */
     },
     colorMode: {
       // "light" | "dark"
