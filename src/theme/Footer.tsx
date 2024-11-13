@@ -92,7 +92,7 @@ const footerData = {
   footerDiscordLink: 'https://discord.com/invite/uniswap',
 }
 
-const Footer: FC<{}> = () => {
+const Footer: FC = () => {
   return (
     <footer className="Footer bg-light-surface-1 px-margin-mobile pt-margin-web dark:bg-dark-surface-1 sm:px-margin-web sm:pb-margin-web">
       <h2 className="sr-only">Footer</h2>
