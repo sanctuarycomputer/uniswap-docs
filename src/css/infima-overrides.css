@@ -1,3 +1,29 @@
+button,
+a {
+  all: initial;
+}
+
+button:hover,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  all: initial;
+  display: block;
+  list-style-type: none;
+}
+
+* {
+  font-weight: unset;
+  border-style: solid;
+  border-width: 0;
+  border-color: unset;
+  font-style: unset;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -75,52 +101,4 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-button {
-  text-rendering: unset;
-  color: unset;
-  letter-spacing: unset;
-  word-spacing: unset;
-  line-height: unset;
-  text-transform: unset;
-  text-indent: unset;
-  text-shadow: unset;
-  display: unset;
-  text-align: unset;
-  align-items: unset;
-  cursor: pointer;
-  box-sizing: unset;
-  background-color: unset;
-  margin: unset;
-  padding-block: unset;
-  padding-inline: unset;
-  border-width: unset;
-  border-style: unset;
-  border-color: unset;
-  border-image: unset;
-}
-
-ul {
-  display: block;
-  list-style-type: none;
-  margin-block-start: unset;
-  margin-block-end: unset;
-  margin-inline-start: unset;
-  margin-inline-end: unset;
-  padding-inline-start: unset;
-  unicode-bidi: unset;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-* {
-  font-weight: unset;
-  font-style: unset;
-  border-style: solid;
-  border-width: 0;
-  border-color: unset;
-  font-style: normal;
 }

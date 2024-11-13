@@ -66,11 +66,7 @@ module.exports = {
           blogSidebarCount: 0,
         },
         theme: {
-          customCss: [
-            require.resolve('./src/css/font.css'),
-            require.resolve('./src/css/types.css'),
-            require.resolve('./src/css/custom.css'),
-          ],
+          customCss: [require.resolve('./src/css/custom.css')],
         },
       },
     ],

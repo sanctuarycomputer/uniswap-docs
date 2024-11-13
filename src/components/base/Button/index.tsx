@@ -43,6 +43,7 @@ type ButtonBaseProps = {
   onClick?: () => void
   ariaLabel?: string
   role?: string
+  type?: 'button' | 'submit' | 'reset'
 }
 
 export const ButtonBase: FC<PropsWithChildren<ButtonBaseProps>> = ({
@@ -51,9 +52,10 @@ export const ButtonBase: FC<PropsWithChildren<ButtonBaseProps>> = ({
   children,
   ariaLabel,
   role,
+  type = 'button',
 }) => {
   return (
-    <button onClick={onClick} className={className} aria-label={ariaLabel} role={role}>
+    <button onClick={onClick} className={className} aria-label={ariaLabel} role={role} type={type}>
       {children}
     </button>
   )
