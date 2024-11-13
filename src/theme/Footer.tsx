@@ -108,7 +108,7 @@ const Footer: FC<{}> = () => {
             {footerData.footerLinks && footerData.footerLinks.length > 0 ? (
               <>
                 {footerData.footerLinks.map((section) => (
-                  <div className="space-y-[0.3125rem]">
+                  <div key={section.title} className="space-y-[0.3125rem]">
                     <h3 className="body-1 text-light-neutral-1 dark:text-dark-neutral-1">{section.title}</h3>
                     <ul>
                       {section.links.map((link) => (

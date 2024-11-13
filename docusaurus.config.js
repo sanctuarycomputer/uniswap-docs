@@ -4,6 +4,7 @@ const tailwindPlugin = require('./plugins/tailwind-config.cjs')
 require('dotenv').config()
 
 module.exports = {
+  staticDirectories: ['static'],
   customFields: {
     // Analytics proxy URL
     analyticsProxyUrl: process.env.REACT_APP_AMPLITUDE_PROXY_URL,
@@ -66,9 +67,9 @@ module.exports = {
         },
         theme: {
           customCss: [
-            require.resolve('./src/css/custom.css'),
             require.resolve('./src/css/font.css'),
             require.resolve('./src/css/types.css'),
+            require.resolve('./src/css/custom.css'),
           ],
         },
       },

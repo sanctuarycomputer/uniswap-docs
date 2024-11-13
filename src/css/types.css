@@ -220,7 +220,6 @@
 
   .mono-body-5 {
     @apply font-fragment-mono;
-    font-family: 'Fragment Mono';
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
