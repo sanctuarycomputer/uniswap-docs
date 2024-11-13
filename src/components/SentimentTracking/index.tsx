@@ -19,7 +19,7 @@ export default function SentimentTracking({ analyticsSection }: { analyticsSecti
 
   return (
     <div>
-      <div>Helpful?</div>
+      <div className="Sentiment__question">Was this helpful?</div>
       <TraceEvent
         element={DocsSentiment.POSITIVE_SENTIMENT}
         name={SharedEventName.SENTIMENT_SUBMITTED}
