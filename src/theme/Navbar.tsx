@@ -6,7 +6,7 @@ import ThemeSwitch from '../components/ThemeSwitch'
 
 const Navbar: FC = () => {
   return (
-    <nav className="Navbar fixed left-0 right-0 z-nav flex w-screen justify-center bg-light-surface-1 dark:border-dark-surface-3 dark:bg-dark-surface-1">
+    <nav className="Navbar navbar fixed left-0 right-0 z-nav flex w-screen justify-center bg-light-surface-1 dark:border-dark-surface-3 dark:bg-dark-surface-1">
       <div className="w-full h-nav-h flex flex-row justify-between items-center px-4 py-[1.15625rem] sm:px-[0.9375rem] sm:py-3">
         <a className="flex flex-row items-center" href="/" target="_self" aria-label="Uniswap Documentation Home">
           <MiniUnicon className="w-8 h-8 mr-3" />
