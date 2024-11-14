@@ -29,7 +29,7 @@ const Navbar: FC = () => {
           <div className="hidden md:flex flex-row items-center">
             <ThemeSwitch />
             <a
-              className="button-label-4 py-2 px-3 bg-light-accent-2 dark:bg-dark-accent-2 rounded-small ml-2"
+              className="button-label-4 py-2 px-3 bg-light-accent-2 dark:bg-dark-accent-2 hover:bg-light-accent-2-hovered hover:dark:bg-dark-accent-2-hovered transition rounded-small ml-2"
               href="https://docs.google.com/forms/d/e/1FAIpQLSdjSkZam8KiatL9XACRVxCHjDJjaPGbls77PCXDKFn4JwykXg/viewform"
               target="_blank"
               rel="noreferrer"

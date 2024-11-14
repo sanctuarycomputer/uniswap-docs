@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import { useDocsData } from '@docusaurus/plugin-content-docs/client'
+import useGlobalData from '@docusaurus/useGlobalData'
 
 const Sidebar: FC = () => {
   React.useEffect(() => {
@@ -13,18 +13,12 @@ const Sidebar: FC = () => {
       }
     })
   }, [])
-  const visibleItems = useDocsData(undefined)
-  console.log('!!!', visibleItems)
+
+  const globalData = useGlobalData()
+  console.log('globalData', globalData)
   return (
     <aside id="new-sidebar" className="w-sidebar-w">
-      <div>new sidebar</div>
-      <div>new sidebar</div>
-      <div>new sidebar</div>
-      <div>new sidebar</div>
-      <div>new sidebar</div>
-      <div>new sidebar</div>
-      <div>new sidebar</div>
-      <div>new sidebar</div>
+      Sidebar
     </aside>
   )
 }
