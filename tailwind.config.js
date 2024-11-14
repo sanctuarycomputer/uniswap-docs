@@ -73,6 +73,7 @@ module.exports = {
         'gap-small': rem(8),
         'gap-x-small': rem(4),
         'nav-h': rem(72),
+        'sidebar-w': rem(240),
       },
       boxShadow: {
         'light-short': '0px 1px 6px 2px rgba(0, 0, 0, 0.03), 0px 1px 2px 0px rgba(0, 0, 0, 0.02)',
