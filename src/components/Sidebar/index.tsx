@@ -4,6 +4,7 @@ import { useDocsData } from '@docusaurus/plugin-content-docs/client'
 
 const Sidebar: FC = () => {
   React.useEffect(() => {
+    // remove original sidebar
     const main = document.getElementById('new-main')
     const sidebars = main.getElementsByTagName('aside')
     Array.from(sidebars).map((sidebar) => {
