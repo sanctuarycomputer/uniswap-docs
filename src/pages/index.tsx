@@ -279,7 +279,7 @@ const Home = () => {
             </div>
             <div className="col-span-4 flex min-h-[15.625rem] flex-col justify-between space-y-12 rounded-large bg-light-pink-fade p-8 dark:bg-dark-pink-fade-80 sm:col-span-8 sm:space-y-0 sm:pt-[1.8125rem] md:col-span-4">
               <NewsletterForm
-                inputClass="bg-light-surface-1 p-3 pl-[2.1875rem] text-light-pink-vibrant placeholder:text-light-pink-vibrant dark:bg-dark-surface-1 dark:text-dark-pink-vibrant dark:placeholder:text-dark-pink-vibrant border-none"
+                inputClass="bg-light-surface-1 p-3 pl-[2.1875rem] text-light-accent-1 placeholder:text-light-accent-1 dark:bg-dark-surface-1 dark:text-dark-accent-1 dark:placeholder:text-dark-accent-1 border-none"
                 globeColorClass="pink-vibrant"
                 headerTextClass="dark:text-dark-accent-1 max-w-[25rem] text-light-accent-1"
                 headerText={connectBlock.newsletterTitle}
@@ -304,7 +304,7 @@ const Home = () => {
                   to="https://unigrants.org/"
                 >
                   <Globe className="mr-2 h-6 w-6" color="neutral-1" />
-                  <span className={cn('button-label-1 transition text-light-neutral-1 dark:text-dark-orange-vibrant')}>
+                  <span className={cn('button-label-1 transition text-light-neutral-1 dark:text-dark-neutral-1')}>
                     Learn more
                   </span>
                 </Link>

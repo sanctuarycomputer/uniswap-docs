@@ -28,7 +28,8 @@ const NewsletterForm: React.FC<NewsletterFormProps> = ({
     }
 
     try {
-      const response = await fetch('/api/subscribeEmail', {
+      // Replace '/some-api' with the actual API endpoint
+      const response = await fetch('/some-api', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -64,7 +65,7 @@ const NewsletterForm: React.FC<NewsletterFormProps> = ({
             />
             <Envlope className="absolute left-3 top-[50%] h-6 w-6 translate-y-[-50%]" color={globeColorClass} />
           </div>
-          <button className="group mt-2 flex items-center justify-center rounded-large bg-light-pink-vibrant p-3 transition hover:bg-dark-accent-2 dark:bg-dark-pink-vibrant hover:dark:bg-light-accent-2 sm:ml-2 sm:mt-0">
+          <button className="group mt-2 flex items-center justify-center rounded-large bg-light-pink-vibrant p-3 w-32 transition hover:bg-dark-accent-2 dark:bg-dark-pink-vibrant hover:dark:bg-light-accent-2 sm:ml-2 sm:mt-0">
             <span className="button-label-1 text-white transition group-hover:text-dark-accent-1 group-hover:dark:text-light-accent-1">
               Submit
             </span>
