@@ -386,7 +386,7 @@ export const Chat: FC<{
   )
 }
 
-export const Envlope: FC<{
+export const Envelope: FC<{
   className?: string
   color?: 'pink-vibrant' | 'neutral-2'
 }> = ({ className, color = 'pink-vibrant' }) => {
