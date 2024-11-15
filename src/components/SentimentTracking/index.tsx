@@ -29,6 +29,7 @@ export default function SentimentTracking({ analyticsSection }: { analyticsSecti
           section={analyticsSection}
         >
           <button
+            aria-label="Rate as positive"
             onClick={() => {
               setSelectedSentiment(Sentiment.POSITIVE)
             }}
@@ -46,6 +47,7 @@ export default function SentimentTracking({ analyticsSection }: { analyticsSecti
           section={analyticsSection}
         >
           <button
+            aria-label="Rate as neutral"
             onClick={() => {
               setSelectedSentiment(Sentiment.NEUTRAL)
             }}
@@ -63,6 +65,7 @@ export default function SentimentTracking({ analyticsSection }: { analyticsSecti
           section={analyticsSection}
         >
           <button
+            aria-label="Rate as negative"
             onClick={() => {
               setSelectedSentiment(Sentiment.NEGATIVE)
             }}
