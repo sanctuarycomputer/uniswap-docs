@@ -12,6 +12,7 @@ import DocItemContent from '@theme/DocItem/Content'
 import DocBreadcrumbs from '@theme/DocBreadcrumbs'
 import EditThisPage from '@theme/EditThisPage'
 import styles from './styles.module.css'
+import { Edit } from '../../../components/Icons'
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
@@ -54,7 +55,12 @@ export default function DocItemLayout({ children }) {
             {docTOC.desktop}
           </>
         )}
-        {editUrl && <EditThisPage editUrl={editUrl} />}
+        {editUrl && (
+          <div className="flex flex-row space-x-1 items-center group/edit-icon">
+            <Edit className="Toc__edit-icon h-4 w-4" />
+            <EditThisPage editUrl={editUrl} />
+          </div>
+        )}
       </div>
     </div>
   )

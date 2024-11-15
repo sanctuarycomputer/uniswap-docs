@@ -1,7 +1,8 @@
 import { TraceEvent } from '@uniswap/analytics'
 import { BrowserEvent, DocsSentiment, DocsSentimentSection, SharedEventName } from '@uniswap/analytics-events'
 import React, { useCallback, useState } from 'react'
-import { Frown, Meh, Smile } from 'react-feather'
+import { Happy, Sad, Neutral } from '../Icons'
+import cn from 'classnames'
 
 enum Sentiment {
   NEGATIVE = 'NEGATIVE',
@@ -18,47 +19,61 @@ export default function SentimentTracking({ analyticsSection }: { analyticsSecti
   )
 
   return (
-    <div>
+    <div className="flex flex-row space-x-4">
       <div className="Sentiment__question">Was this helpful?</div>
-      <TraceEvent
-        element={DocsSentiment.POSITIVE_SENTIMENT}
-        name={SharedEventName.SENTIMENT_SUBMITTED}
-        events={[BrowserEvent.onClick]}
-        section={analyticsSection}
-      >
-        {/* <PositiveSentimentIcon
-          selected={isSentimentSelected(Sentiment.POSITIVE)}
-          onClick={() => {
-            setSelectedSentiment(Sentiment.POSITIVE)
-          }}
-        /> */}
-      </TraceEvent>
-      <TraceEvent
-        element={DocsSentiment.NEUTRAL_SENTIMENT}
-        name={SharedEventName.SENTIMENT_SUBMITTED}
-        events={[BrowserEvent.onClick]}
-        section={analyticsSection}
-      >
-        {/* <NeutralSentimentIcon
-          selected={isSentimentSelected(Sentiment.NEUTRAL)}
-          onClick={() => {
-            setSelectedSentiment(Sentiment.NEUTRAL)
-          }}
-        /> */}
-      </TraceEvent>
-      <TraceEvent
-        element={DocsSentiment.NEGATIVE_SENTIMENT}
-        name={SharedEventName.SENTIMENT_SUBMITTED}
-        events={[BrowserEvent.onClick]}
-        section={analyticsSection}
-      >
-        {/* <NegativeSentimentIcon
-          selected={isSentimentSelected(Sentiment.NEGATIVE)}
-          onClick={() => {
-            setSelectedSentiment(Sentiment.NEGATIVE)
-          }}
-        /> */}
-      </TraceEvent>
+      <div className="flex flex-row space-x-1">
+        <TraceEvent
+          element={DocsSentiment.POSITIVE_SENTIMENT}
+          name={SharedEventName.SENTIMENT_SUBMITTED}
+          events={[BrowserEvent.onClick]}
+          section={analyticsSection}
+        >
+          <button
+            onClick={() => {
+              setSelectedSentiment(Sentiment.POSITIVE)
+            }}
+            className={cn('group/happy', {
+              selected: isSentimentSelected(Sentiment.POSITIVE),
+            })}
+          >
+            <Happy className="h-5 w-5 group/happy" />
+          </button>
+        </TraceEvent>
+        <TraceEvent
+          element={DocsSentiment.NEUTRAL_SENTIMENT}
+          name={SharedEventName.SENTIMENT_SUBMITTED}
+          events={[BrowserEvent.onClick]}
+          section={analyticsSection}
+        >
+          <button
+            onClick={() => {
+              setSelectedSentiment(Sentiment.NEUTRAL)
+            }}
+            className={cn('group/neutral', {
+              selected: isSentimentSelected(Sentiment.NEUTRAL),
+            })}
+          >
+            <Neutral className="h-5 w-5" />
+          </button>
+        </TraceEvent>
+        <TraceEvent
+          element={DocsSentiment.NEGATIVE_SENTIMENT}
+          name={SharedEventName.SENTIMENT_SUBMITTED}
+          events={[BrowserEvent.onClick]}
+          section={analyticsSection}
+        >
+          <button
+            onClick={() => {
+              setSelectedSentiment(Sentiment.NEGATIVE)
+            }}
+            className={cn('group/sad', {
+              selected: isSentimentSelected(Sentiment.NEGATIVE),
+            })}
+          >
+            <Sad className="h-5 w-5" />
+          </button>
+        </TraceEvent>
+      </div>
     </div>
   )
 }
