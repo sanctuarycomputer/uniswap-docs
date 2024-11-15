@@ -119,3 +119,9 @@
 .col.docItemCol_src-theme-DocItem-Layout-styles-module {
   @apply sm:!max-w-full md:!max-w-[75%];
 }
+.container {
+  @apply !mt-nav-h;
+}
+.theme-doc-footer-edit-meta-row {
+  @apply !hidden;
+}
