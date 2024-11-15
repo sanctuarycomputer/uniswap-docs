@@ -218,7 +218,7 @@ export const Happy: FC<{
         cy="10"
         r="9"
         className={cn({
-          'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/happy:stroke-light-neutral-1 group-hover/happy:dark:stroke-dark-neutral-1 group-[.selected]/happy:fill-light-status-success-1 group-[.selected]/happy:dark:fill-dark-status-success-1 group-[.selected]/happy:stroke-light-neutral-1 group-[.selected]/happy:dark:stroke-dark-neutral-1':
+          'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/positive:stroke-light-neutral-1 group-hover/positive:dark:stroke-dark-neutral-1 group-[.selected]/positive:fill-light-status-success-1 group-[.selected]/positive:dark:fill-dark-status-success-1 group-[.selected]/positive:stroke-light-neutral-1 group-[.selected]/positive:dark:stroke-dark-neutral-1':
             color === 'neutral-2',
         })}
         strokeWidth="2"
@@ -228,7 +228,7 @@ export const Happy: FC<{
         cy="8"
         r="1"
         className={cn({
-          'fill-light-neutral-2 dark:fill-dark-neutral-2 group-hover/happy:fill-light-neutral-1 group-hover/happy:dark:fill-dark-neutral-1 group-[.selected]/happy:fill-light-neutral-1 group-[.selected]/happy:dark:fill-dark-neutral-1':
+          'fill-light-neutral-2 dark:fill-dark-neutral-2 group-hover/positive:fill-light-neutral-1 group-hover/positive:dark:fill-dark-neutral-1 group-[.selected]/positive:fill-light-neutral-1 group-[.selected]/positive:dark:fill-dark-neutral-1':
             color === 'neutral-2',
         })}
       />
@@ -237,14 +237,14 @@ export const Happy: FC<{
         cy="8"
         r="1"
         className={cn({
-          'fill-light-neutral-2 dark:fill-dark-neutral-2 group-hover/happy:fill-light-neutral-1 group-hover/happy:dark:fill-dark-neutral-1 group-[.selected]/happy:fill-light-neutral-1 group-[.selected]/happy:dark:fill-dark-neutral-1':
+          'fill-light-neutral-2 dark:fill-dark-neutral-2 group-hover/positive:fill-light-neutral-1 group-hover/positive:dark:fill-dark-neutral-1 group-[.selected]/positive:fill-light-neutral-1 group-[.selected]/positive:dark:fill-dark-neutral-1':
             color === 'neutral-2',
         })}
       />
       <path
         d="M6 12C6 12 7.29032 14 10 14C12.7097 14 14 12 14 12"
         className={cn({
-          'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/happy:stroke-light-neutral-1 group-hover/happy:dark:stroke-dark-neutral-1 group-[.selected]/happy:stroke-light-neutral-1 group-[.selected]/happy:dark:stroke-dark-neutral-1':
+          'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/positive:stroke-light-neutral-1 group-hover/positive:dark:stroke-dark-neutral-1 group-[.selected]/positive:stroke-light-neutral-1 group-[.selected]/positive:dark:stroke-dark-neutral-1':
             color === 'neutral-2',
         })}
         strokeWidth="2"
@@ -312,7 +312,7 @@ export const Sad: FC<{
         cy="10"
         r="9"
         className={cn({
-          'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/sad:stroke-light-neutral-1 group-hover/sad:dark:stroke-dark-neutral-1 group-[.selected]/sad:fill-light-status-critical-1 group-[.selected]/sad:dark:fill-dark-status-critical-1 group-[.selected]/sad:stroke-light-neutral-1 group-[.selected]/sad:dark:stroke-dark-neutral-1':
+          'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/negative:stroke-light-neutral-1 group-hover/negative:dark:stroke-dark-neutral-1 group-[.selected]/negative:fill-light-status-critical-1 group-[.selected]/negative:dark:fill-dark-status-critical-1 group-[.selected]/negative:stroke-light-neutral-1 group-[.selected]/negative:dark:stroke-dark-neutral-1':
             color === 'neutral-2',
         })}
         strokeWidth="2"
@@ -322,7 +322,7 @@ export const Sad: FC<{
         cy="8"
         r="1"
         className={cn({
-          'fill-light-neutral-2 dark:fill-dark-neutral-2 group-hover/sad:fill-light-neutral-1 group-hover/sad:dark:fill-dark-neutral-1 group-[.selected]/sad:fill-light-neutral-1 group-[.selected]/sad:dark:fill-dark-neutral-1':
+          'fill-light-neutral-2 dark:fill-dark-neutral-2 group-hover/negative:fill-light-neutral-1 group-hover/negative:dark:fill-dark-neutral-1 group-[.selected]/negative:fill-light-neutral-1 group-[.selected]/negative:dark:fill-dark-neutral-1':
             color === 'neutral-2',
         })}
       />
@@ -331,14 +331,14 @@ export const Sad: FC<{
         cy="8"
         r="1"
         className={cn({
-          'fill-light-neutral-2 dark:fill-dark-neutral-2 group-hover/sad:fill-light-neutral-1 group-hover/sad:dark:fill-dark-neutral-1 group-[.selected]/sad:fill-light-neutral-1 group-[.selected]/sad:dark:fill-dark-neutral-1':
+          'fill-light-neutral-2 dark:fill-dark-neutral-2 group-hover/negative:fill-light-neutral-1 group-hover/negative:dark:fill-dark-neutral-1 group-[.selected]/negative:fill-light-neutral-1 group-[.selected]/negative:dark:fill-dark-neutral-1':
             color === 'neutral-2',
         })}
       />
       <path
         d="M14 13C14 13 12.7097 11 10 11C7.29032 11 6 13 6 13"
         className={cn({
-          'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/sad:stroke-light-neutral-1 group-hover/sad:dark:stroke-dark-neutral-1 group-[.selected]/sad:stroke-light-neutral-1 group-[.selected]/sad:dark:stroke-dark-neutral-1':
+          'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/negative:stroke-light-neutral-1 group-hover/negative:dark:stroke-dark-neutral-1 group-[.selected]/negative:stroke-light-neutral-1 group-[.selected]/negative:dark:stroke-dark-neutral-1':
             color === 'neutral-2',
         })}
         strokeWidth="2"
