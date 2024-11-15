@@ -221,7 +221,7 @@ export const Happy: FC<{
           'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/happy:stroke-light-neutral-1 group-hover/happy:dark:stroke-dark-neutral-1 group-[.selected]/happy:fill-light-status-success-1 group-[.selected]/happy:dark:fill-dark-status-success-1 group-[.selected]/happy:stroke-light-neutral-1 group-[.selected]/happy:dark:stroke-dark-neutral-1':
             color === 'neutral-2',
         })}
-        stroke-width="2"
+        strokeWidth="2"
       />
       <circle
         cx="7"
@@ -247,8 +247,8 @@ export const Happy: FC<{
           'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/happy:stroke-light-neutral-1 group-hover/happy:dark:stroke-dark-neutral-1 group-[.selected]/happy:stroke-light-neutral-1 group-[.selected]/happy:dark:stroke-dark-neutral-1':
             color === 'neutral-2',
         })}
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   )
@@ -268,7 +268,7 @@ export const Neutral: FC<{
           'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/neutral:stroke-light-neutral-1 group-hover/neutral:dark:stroke-dark-neutral-1 group-[.selected]/neutral:fill-light-status-warning-1 group-[.selected]/neutral:dark:fill-dark-status-warning-1 group-[.selected]/neutral:stroke-light-neutral-1 group-[.selected]/neutral:dark:stroke-dark-neutral-1':
             color === 'neutral-2',
         })}
-        stroke-width="2"
+        strokeWidth="2"
       />
       <circle
         cx="7"
@@ -294,8 +294,8 @@ export const Neutral: FC<{
           'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/neutral:stroke-light-neutral-1 group-hover/neutral:dark:stroke-dark-neutral-1 group-[.selected]/neutral:stroke-light-neutral-1 group-[.selected]/neutral:dark:stroke-dark-neutral-1':
             color === 'neutral-2',
         })}
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   )
@@ -315,7 +315,7 @@ export const Sad: FC<{
           'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/sad:stroke-light-neutral-1 group-hover/sad:dark:stroke-dark-neutral-1 group-[.selected]/sad:fill-light-status-critical-1 group-[.selected]/sad:dark:fill-dark-status-critical-1 group-[.selected]/sad:stroke-light-neutral-1 group-[.selected]/sad:dark:stroke-dark-neutral-1':
             color === 'neutral-2',
         })}
-        stroke-width="2"
+        strokeWidth="2"
       />
       <circle
         cx="7"
@@ -341,8 +341,8 @@ export const Sad: FC<{
           'stroke-light-neutral-2 dark:stroke-dark-neutral-2 group-hover/sad:stroke-light-neutral-1 group-hover/sad:dark:stroke-dark-neutral-1 group-[.selected]/sad:stroke-light-neutral-1 group-[.selected]/sad:dark:stroke-dark-neutral-1':
             color === 'neutral-2',
         })}
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   )
