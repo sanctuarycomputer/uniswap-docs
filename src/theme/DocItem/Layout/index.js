@@ -50,10 +50,10 @@ export default function DocItemLayout({ children }) {
       </div>
       <div className="col col--3 Toc__container">
         {docTOC.desktop && (
-          <>
+          <div>
             <p className="Toc__title">On this page</p>
             {docTOC.desktop}
-          </>
+          </div>
         )}
         {editUrl && (
           <div className="flex flex-row space-x-1 items-center group/edit-icon">
