@@ -3,10 +3,6 @@ name: Algolia Search
 on:
   schedule:
     - cron: '0 10 * * *'
-  # TODO: Remove trigger from push event when search index scraper is fixed
-  push:
-    branches:
-      - '7-fix-search'
 
 jobs:
   build:
